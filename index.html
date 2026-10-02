@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <style>
 body{background:#e0bd85; margin-top:15vh; text-align:center; }
-</style>
+.score:hover{transform: scale(1.1); box-shadow: 5px 5px rgba(0, 0, 0, 0.269);}</style>
 <h1 style="font-family:monospace; -webkit-text-stroke: 1.5px #5e2605; color:#b35a26; font-size:40px;">Cookie Clicker</h1>
 <br>
 <button style="border:none; background: rgba(255, 0, 0, 0);">
     <canvas id="cookie" width="200" height="200">Cookie</canvas>
 </button>
-<center><div style="background-color: #f6b143; width: 150px; height: 40px; border-radius: 6px;"></center>
-<p style="font-family: cursive; font-size: 25px;">Score: <span id="score">0</span></p>
+<center>
+    <div class="score" style="background-color: #ab792a; width: 150px; height: 40px; border-radius: 4px;">
+<p style="font-family: cursive; font-size: 25px; color: white;">Score: <span id="score">0</span></p>
 </div>
+</center>
