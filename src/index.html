@@ -1,8 +1,47 @@
-<!DOCTYPE html><style>body{background:#be9164; margin-top:15vh; text-align:center; }.score:hover{transform: scale(1.1); box-shadow: 5px 5px rgba(0, 0, 0, 0.269);}
-canvas:active {transform: scale(1.1);}</style><h1 style="font-family:monospace; -webkit-text-stroke: 1.5px #5e2605; color:#b35a26; font-size:40px;">Cookie Clicker</h1><audio id="bite" src="data:audio/mp3;base64,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"></audio>
-<button onclick="document.getElementById('bite').play()" style="border:none; background: rgba(255, 0, 0, 0);"><canvas id="cookie" width="200" height="200">Cookie</canvas>
-</button><center><div class="score" style="background-color: #ab792a; width: 150px; height: 40px; border-radius: 4px;"><p style="font-family: cursive; font-size: 25px; color: white;">Score: <span id="score">0</span></p></div>
-</center><script>
-    const canvas = document.getElementById("cookie");const ctx = canvas.getContext("2d");ctx.fillStyle = '#d2b48c';ctx.beginPath();ctx.arc(100, 100, 80, 0, Math.PI * 2);ctx.fill();
+<!DOCTYPE html>
+<style>body{background:#be9164; margin-top:15vh; text-align:center; }
+.score:hover{transform: scale(1.1); box-shadow: 5px 5px rgba(0, 0, 0, 0.269);}
+canvas:active {transform: scale(1.1);}</style>
+<h1 style="font-family:monospace; -webkit-text-stroke: 1.5px #5e2605; color:#b35a26; font-size:40px;">Cookie Clicker</h1>
+<audio id="bite" src="data:audio/mp3;base64,SUQzBAAAAAAAIlRTU0UAAAAOAAADTGF2ZjYzLjEuMTAxAAAAAAAAAAAAAAD/+1QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABJbmZvAAAADwAAAAsAAATgADs7Ozs7Ozs7O05OTk5OTk5OTmJiYmJiYmJiYnZ2dnZ2dnZ2domJiYmJiYmJiZ2dnZ2dnZ2dnbGxsbGxsbGxscTExMTExMTExNjY2NjY2NjY2Ozs7Ozs7Ozs7P///////////wAAAABMYXZjNjMuMS4AAAAAAAAAAAAAAAAkBCAAAAAAAAAE4Gfym7r/+xRkAA/wAABpAAAACAAADSAAAAEAAAGkAAAAIAAANIAAAAQCoABIACHlJQMvDCoEEkAADwD0BsPz4N5Asa58YAYoy2BJBPfw4xjDF/HUviN/+VDUU0hBoTG0NdT3Ya//+xRkHgPwCgCAASAACAAADSAAAAEBPAK/FBCAIAAANIKAAATVFjjF1QxwuuiKWzMWDFiBbQgLihDD4wj1wLWdM7BP78VNzyemAiCjKUAQAEQRvo+pPHBgoG5qK6YZtQT/+xRkNgABHRrMrkmgAAAADSDAAAACEC9MHDGAAAAANIOAAAQYZe6pdBjq0Ychk68Osem92qRzJ4XJHwCsBHqgAFu+tTNf/Z3rLP/8BKC0/h56lh1REIDSap3HIWzwaUH/+xRkOY/waAnTgKYCmgAADSAAAAEB0A1OAIhACAAANIAAAATlqogQAAzAFeBvFKdrZwjfdbErp8E4R5VLlUX/qEIYD1XVjWROlC4UU6CJVHeQYMX0L81zXr1GDvmJrDj/+xRkSY/wfgnVAMEaEAAADSAAAAEB4CdaAwBoAAAANIAAAATDF8CDcDerQgwKF4zmDoqRPR5v/796cy+4HeRajwwBdxttAiHDKLuAu6LL89PXVErU1bW2SwfvoTqOXEv/+xRkWA/wbgbXgCEYAgAADSAAAAEBuAFcAIRkwAAANIAAAARI6w/Kz7jc0cxQ4+Gn9hv9QIBUhBElZzSEApG4SJAIkSo0jMy1USZJ5IgEjKLkUQV4Mj//+LVMQU1FMy7/+xRkaAPwfwBYAAAAAgAADSAAAAEBlAVnAQRAAAAANIAAAAQxMDBVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVX/+xRkd4PwlAFXwOMYAgAADSAAAAEBcCdaAYRGwAAANIAAAARVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVX"></audio>
+<button onclick="document.getElementById('bite').play()" style="outline:none ;border:none; background: rgba(255, 0, 0, 0);">
+  <canvas style="outline:none ;" id="cookie" width="200" height="200">Cookie</canvas>
+</button> 
+<center>
+    <div class="score" style="background-color: #ab792a; width: 150px; height: 40px; border-radius: 4px;">
+<p style="font-family: cursive; font-size: 25px; color: white;">Score: <span id="score">0</span></p>
+</div>
+</center>
+<script>
+    const canvas = document.getElementById("cookie");
+    const ctx = canvas.getContext("2d");
+    ctx.fillStyle = '#d2b48c';
+    ctx.beginPath();
+    ctx.arc(100, 100, 80, 0, Math.PI * 2);
+    ctx.fill();
     ctx.fillStyle = '#4b3621';
-    ctx.beginPath();ctx.arc(70,80, 10, 0, Math.PI * 2);ctx.arc(130, 120, 8, 0, Math.PI * 2);ctx.fill();ctx.fillStyle = '#4b3621';ctx.beginPath();ctx.arc(100, 100, 6, 0, Math.PI * 2);ctx.arc(70, 140, 12, 0, Math.PI * 2);ctx.fill();ctx.fillStyle = '#4b3621';ctx.beginPath();ctx.arc(110, 140, 9, 0, Math.PI * 2);ctx.arc(130, 70, 11, 0, Math.PI * 2);tx.fill();const btn = document.getElementById("cookie");const count = document.getElementById("score");btn.addEventListener('click', () => {count.textContent = parseInt(count.textContent) + 1;});</script>
+    ctx.beginPath();
+    ctx.arc(70,80, 10, 0, Math.PI * 2);
+    ctx.arc(130, 120, 8, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.fillStyle = '#4b3621';
+    ctx.beginPath();
+    ctx.arc(100, 100, 6, 0, Math.PI * 2);
+    ctx.arc(70, 140, 12, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.fillStyle = '#4b3621';
+    ctx.beginPath();
+    ctx.arc(110, 140, 9, 0, Math.PI * 2);
+    ctx.arc(130, 70, 11, 0, Math.PI * 2);
+    ctx.fill();
+    const btn = document.getElementById("cookie");
+    const count = document.getElementById("score");
+    btn.addEventListener('click', () => {
+        count.textContent = parseInt(count.textContent) + 1;
+    const sound = document.getElementById('bite');
+    sound.currentTime = 0;
+    sound.play();
+
+    });
+
+</script>
