@@ -8,3 +8,15 @@
 - The cookie was drawn in canvas using JS.
 - Sound was encoded in base64 instead of any hosting.
 - Everything works local and offline.
+##### How to use it:
+1. Download the repo or clone it.
+2. Go to ```/dist```.
+3. Open ```uri.txt``` and copy the code.
+4. Paste it in your browser's URL bar.
+##### How it works:
+When you click on the cookie (made inside canvas) which is inside the button tag, on click it plays audio from base64 encoded mp3 which is set as the source and a simple script count each score by adding +1.
+##### Building
+```
+npm install
+node build.mjs
+```
