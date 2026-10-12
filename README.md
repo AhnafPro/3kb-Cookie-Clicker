@@ -17,6 +17,6 @@
 When you click on the cookie (made inside canvas) which is inside the button tag, on click it plays audio from base64 encoded mp3 which is set as the source and a simple script count each score by adding +1.
 ##### Building
 ```
-npm install
+npm install terser
 node build.mjs
 ```
